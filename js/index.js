@@ -2,16 +2,6 @@ let count = 0;
 
 
 
-
-function disabledButton(id) {
-    document.getElementById(id).setAttribute("disabled", true);
-}
-
-
-
-
-
-
 const buttons = document.querySelectorAll('.btn-primary');
 
 buttons.forEach(function (button) {
@@ -31,6 +21,7 @@ buttons.forEach(function (button) {
         const nameContainer = document.getElementById('name-container');
 
         nameContainer.appendChild(container);
+        document.getElementById ('btn-calculate').removeAttribute ('disabled');
     });
 });
 
@@ -43,7 +34,9 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 
     const calculate = count * parseInt(playerValue);
 
-    document.getElementById('player-expense').innerText = calculate;
+    setText('player-expense', calculate);
+    document.getElementById ('btn-calculate-total').removeAttribute ('disabled');
+
 
 
 
@@ -59,12 +52,12 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 
 document.getElementById('btn-calculate-total').addEventListener('click', function () {
 
-    const playerExpense = document.getElementById('player-expense').innerText;
-    const Manager = document.getElementById('Manager').value;
-    const Coach = document.getElementById('Coach').value;
+    const playerExpense = getText('player-expense');
+    const Manager = getInput('Manager');
+    const Coach = getInput('Coach');
 
     const total = parseInt(playerExpense) + parseInt(Manager) + parseInt(Coach);
-    document.getElementById('totalSum').innerText = total;
+    setText('totalSum', total);
 
 
 

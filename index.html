@@ -11,12 +11,23 @@
 
 </head>
 
+<style> 
+
+* {
+  overflow-x: hidden;
+  max-width: 100%;
+
+
+}
+
+</style>
+
 <body >
 
 
-    <header class="container mx-auto">
+    <header>
 
-        <div class="hero  lg:max-h-screen" style="background-color: black;">
+        <div class="hero w-full h-max p-10 lg:p-0" style="background-color: black;">
 
 
             <div class="hero-overlay bg-opacity-60 p-5"></div>
@@ -41,9 +52,9 @@
 
 
 
-    <main class="lg:flex ">
+    <main class="lg:flex space-y-5">
 
-        <section class="w[60%]">
+        <section class="max-w-max ml-auto space-y-5 mx-10">
 
             <div id="playerss" class="lg:grid grid-cols-3 gap-10 px-10">
 
@@ -193,7 +204,7 @@
 
                 <div class="space-y-4">
 
-                    <button id="btn-calculate" class="btn btn-info ">Calculate</button>
+                    <button id="btn-calculate" class="btn btn-info " disabled>Calculate</button>
                     <p>Player Expense : $<span id="player-expense">00</span></p>
 
 
@@ -214,7 +225,7 @@
     
                     </div>
 
-                    <button id="btn-calculate-total" class="btn btn-info">Calculate Total</button>
+                    <button disabled id="btn-calculate-total" class="btn btn-info">Calculate Total</button>
 
                     <p>Total <span class="text-red-400">$<span id="totalSum">000</span></span></p>
 
@@ -243,6 +254,8 @@
 
         
     </main>
+
+    <script src="js/utilitis.js"></script>
 
     <script src="js/index.js"></script>
 
