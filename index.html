@@ -25,9 +25,9 @@
 <body >
 
 
-    <header>
+    <header class="">
 
-        <div class="hero w-full h-max p-10 lg:p-0" style="background-color: black;">
+        <div class="hero w-full h-max p-10 lg:p-0 overflow-y-hidden" style="background-color: black;">
 
 
             <div class="hero-overlay bg-opacity-60 p-5"></div>
@@ -35,8 +35,8 @@
             <img class="lg:ml-auto hidden lg:flex" src="images/Card-psg.png" alt="">
 
             <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md text-white">
-                <h1 class="mb-5 text-4xl font-bold text-yellow-500">Select Your Best Five</h1>
+              <div class="max-w-md text-white overflow-hidden">
+                <h1 class="mb-5 text-4xl font-bold text-yellow-500 overflow-hidden">Select Your Best Five</h1>
                 <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
               </div>
             </div>
@@ -54,7 +54,7 @@
 
     <main class="lg:flex space-y-5">
 
-        <section class="max-w-max ml-auto space-y-5 mx-10">
+        <section class="ml-auto space-y-5 mx-10 w-[70%]">
 
             <div id="playerss" class="lg:grid grid-cols-3 gap-10 px-10">
 
@@ -165,7 +165,7 @@
         </section>
 
 
-        <section class="space-y-10 ">
+        <section class="space-y-10 max-w-max ">
 
 
             <div class="card w-64 bg-base-100 shadow-xl">
@@ -193,8 +193,8 @@
   
                 </div>
 
-                <div class="flex items-center space-x-2">
-                    <label class="text-sm " for="per-player">Per Player :</label>
+                <div class="lg:flex items-center space-x-2">
+                    <label class=" " for="per-player">Per Player :</label>
 
 
                     <input id="per-player" type="number" placeholder="0" class="input input-bordered w-28 max-w-xs" />
@@ -208,7 +208,7 @@
                     <p>Player Expense : $<span id="player-expense">00</span></p>
 
 
-                    <div class="flex items-center space-x-2">
+                    <div class="lg:flex items-center space-x-2">
                         <label class="text-sm " for="Manager">Manager</label>
     
     
@@ -216,7 +216,7 @@
     
     
                     </div>
-                    <div class="flex items-center space-x-2">
+                    <div class="lg:flex items-center space-x-2">
                         <label class="text-sm " for="Coach">Coach</label>
     
     

@@ -32,12 +32,22 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayer = document.getElementById('per-player')
     const playerValue = perPlayer.value;
 
+   
+
+
+
+
+    
+
+
+
     const calculate = count * parseInt(playerValue);
 
     setText('player-expense', calculate);
     document.getElementById ('btn-calculate-total').removeAttribute ('disabled');
 
 
+   
 
 
 
@@ -56,8 +66,16 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const Manager = getInput('Manager');
     const Coach = getInput('Coach');
 
+    if (isNaN (playerExpense) || isNaN (Manager) || isNaN (Coach)) { 
+
+        alert ('Please enter a number');
+    }
+
+   else {
+
     const total = parseInt(playerExpense) + parseInt(Manager) + parseInt(Coach);
     setText('totalSum', total);
+   }
 
 
 
