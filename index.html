@@ -11,17 +11,17 @@
 
 </head>
 
-<body>
+<body >
 
 
-    <header>
+    <header class="container mx-auto">
 
-        <div class="hero h-full" style="background-color: black;">
+        <div class="hero  lg:max-h-screen" style="background-color: black;">
 
 
-            <div class="hero-overlay bg-opacity-60"></div>
-            <img class="lg:mr-auto" src="images/banner-images.png" alt="">
-            <img class="lg:ml-auto" src="images/Card-psg.png" alt="">
+            <div class="hero-overlay bg-opacity-60 p-5"></div>
+            <img class="lg:mr-auto hidden lg:flex" src="images/banner-images.png" alt="">
+            <img class="lg:ml-auto hidden lg:flex" src="images/Card-psg.png" alt="">
 
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md text-white">
@@ -193,7 +193,7 @@
 
                 <div class="space-y-4">
 
-                    <button id="btn-calculate" class="btn btn-primary">Calculate</button>
+                    <button id="btn-calculate" class="btn btn-info ">Calculate</button>
                     <p>Player Expense : $<span id="player-expense">00</span></p>
 
 
@@ -214,7 +214,7 @@
     
                     </div>
 
-                    <button id="btn-calculate-total" class="btn btn-primary">Calculate Total</button>
+                    <button id="btn-calculate-total" class="btn btn-info">Calculate Total</button>
 
                     <p>Total <span class="text-red-400">$<span id="totalSum">000</span></span></p>
 
